@@ -160,3 +160,13 @@
 * 确保加载的共享库文件（.so/.dll）是用 **调试信息** 编译的（使用 `-g` 标志）。
 * 在 Python 和 C++ 代码之间设置的连续断点，只有 **继续** 按钮能正常工作。
 * 由于 Python 调试器在重启后会更改其 processId，**重启** 按钮不受支持。
+
+## 从源码构建
+
+```bash
+yarn install
+
+yarn run compile
+
+NODE_OPTIONS=--openssl-legacy-provider vsce package
+```

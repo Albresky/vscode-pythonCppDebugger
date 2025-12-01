@@ -159,3 +159,16 @@ When you start Python C++ Debug, it:
 * Make sure the shared object files (.so/.dll) you are loading have been compiled with **debug info** (`-g` flag).
 * Between consecutive breakpoints where one is in Python and the other in C++ code, only the **Continue** button will work correctly.
 * The **Restart** button isn't supported due to the Python debugger changing its processId after a restart.
+
+## Building from Source
+
+```bash
+# Install dependencies
+yarn install
+
+# Compile TypeScript
+yarn run compile
+
+# Package extension
+NODE_OPTIONS=--openssl-legacy-provider vsce package
+```
