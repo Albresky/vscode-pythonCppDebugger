@@ -47,13 +47,13 @@
     "ms-python.python",
     "ms-vscode.cpptools"
   ],
-  "homepage": "https://github.com/benibenj/vscode-pythonCpp/",
+  "homepage": "https://github.com/Albresky/vscode-pythonCppDebugger/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/benibenj/vscode-pythonCpp/"
+    "url": "https://github.com/Albresky/vscode-pythonCppDebugger/"
   },
   "bugs": {
-    "url": "https://github.com/benibenj/vscode-pythonCpp/issues"
+    "url": "https://github.com/Albresky/vscode-pythonCppDebugger/issues"
   },
   "scripts": {
     "vscode:prepublish": "yarn run package-ext && yarn run package-web",
