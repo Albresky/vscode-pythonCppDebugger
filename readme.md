@@ -10,7 +10,7 @@ This debugger starts a Python debugger and attaches a C++ debugger to it for deb
 
 To use this debug extension you must have the following extensions installed:
 * **Python** by Microsoft (`ms-python.python`)
-* **C/C++** by Microsoft (`ms-vscode.cpptools`)
+* **C/C++** by Microsoft (`ms-vscode.cpptools`) or **Anysphere C/C++** (`anysphere.cpptools`)
 * **CodeLLDB** by Vadim Chugunov (`vadimcn.vscode-lldb`) - *Optional, for LLDB debugging*
 
 ## Default Configurations

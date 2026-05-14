@@ -10,7 +10,7 @@
 
 使用此调试扩展需要安装以下扩展：
 * **Python** by Microsoft (`ms-python.python`)
-* **C/C++** by Microsoft (`ms-vscode.cpptools`)
+* **C/C++** by Microsoft (`ms-vscode.cpptools`) 或 **Anysphere C/C++** (`anysphere.cpptools`)
 * **CodeLLDB** by Vadim Chugunov (`vadimcn.vscode-lldb`) - *可选，用于 LLDB 调试*
 
 ## 默认配置
