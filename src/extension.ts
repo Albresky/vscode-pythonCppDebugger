@@ -19,21 +19,23 @@ export async function activate(context: vscode.ExtensionContext) {
 
 	// Check if the user has the extension installed and if so, activate them
 	extPy = vscode.extensions.getExtension("ms-python.python");
-	extCpp = vscode.extensions.getExtension("ms-vscode.cpptools");
-	
+
+	// Only accept the official cpptools or the anysphere provider
+	extCpp = vscode.extensions.getExtension("ms-vscode.cpptools") || vscode.extensions.getExtension("anysphere.cpptools");
+
 	if(!extPy){
 		logger.error('Python extension (ms-python.python) not found!', 'Extension');
 		vscode.window.showErrorMessage("You must have the official Python extension to use this debugger!");
 		return;
 	}
 	logger.info('Python extension found: ms-python.python', 'Extension');
-	
+    
 	if(!extCpp){
-		logger.error('C++ extension (ms-vscode.cpptools) not found!', 'Extension');
-		vscode.window.showErrorMessage("You must have the official C++ extension to use this debugger!");
+		logger.error('C++ extension (ms-vscode.cpptools or compatible) not found!', 'Extension');
+		vscode.window.showErrorMessage("You must have the C++ tools extension (ms-vscode.cpptools or a compatible provider) to use this debugger!");
 		return;
 	}
-	logger.info('C++ extension found: ms-vscode.cpptools', 'Extension');
+	logger.info(`C++ extension found: ${extCpp.id}`, 'Extension');
 	
 	if(!extPy.isActive){
 		logger.info('Activating Python extension...', 'Extension');

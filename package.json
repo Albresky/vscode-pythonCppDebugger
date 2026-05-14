@@ -1,7 +1,7 @@
 {
   "name": "pythoncpp-debug",
   "displayName": "Python C++ Debugger",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "publisher": "albresky",
   "description": "Enhanced extension for starting the Python & C++ debugger on the same process in VScode. Support Windows, Linux and macOS with cppvsdbg, gdb or CodeLLDB.",
   "author": {
